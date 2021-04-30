@@ -8,7 +8,7 @@ import cucumber.api.CucumberOptions;
 @CucumberOptions(
 		features = "classpath:Features"
 		,glue = {"stepdefinitions"}
-		,tags = {"@RealizarLogin"}
+		,tags = {"@End2End"}
 		,plugin = {"pretty", "html:target/cucumber-reports"}
 		,monochrome = true
 		 )

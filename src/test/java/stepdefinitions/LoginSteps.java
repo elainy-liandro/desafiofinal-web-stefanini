@@ -14,6 +14,14 @@ public class LoginSteps {
 		Hooks.abrirUrl("http://opensource-demo.orangehrmlive.com/");
 		driver = Hooks.getDriver();
 	}
+	
+	@Dado("^que usuario esteja logado$")
+	public void que_usuario_esteja_logado() throws Throwable {
+		LoginPage lp = new LoginPage(driver);
+		lp.preencherUsuario("Admin");
+		lp.preencherSenha("admin123");
+		lp.clicarBotaoLogin();
+	}
 
 	@Quando("^informar o campo Username como \"([^\"]*)\"$")
 	public void informar_o_campo_Username_como(String arg1) throws Throwable {

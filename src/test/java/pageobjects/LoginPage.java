@@ -10,7 +10,9 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPage {
+import utils.MetodosUteis;
+
+public class LoginPage extends MetodosUteis {
 
 	protected WebDriver driver;
 
@@ -28,8 +30,7 @@ public class LoginPage {
 	@FindBy(how = How.ID, using = "btnLogin")
 	private WebElement btnLogin;
 
-//	@FindBy(how = How.CSS, using = "h1:contains('Dashboard')")
-	@FindBy(how = How.XPATH, using = "//*[@id=\"content\"]/div/div[1]/h1")
+	@FindBy (how = How.ID, using = "menu_dashboard_index")
 	private WebElement dashboard;
 
 	public void esperarElemento(WebElement elemento) {

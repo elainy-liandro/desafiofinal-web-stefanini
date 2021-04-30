@@ -31,7 +31,7 @@ public class Hooks {
 	public static WebDriver getDriver() {
 		return driver;
 	}
-	
+
 	public static void abrirUrl(String url) {
 		driver.get(url);
 	}
