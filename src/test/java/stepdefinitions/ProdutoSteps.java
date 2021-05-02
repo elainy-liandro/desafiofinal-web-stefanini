@@ -20,6 +20,14 @@ public class ProdutoSteps {
 		assertEquals(ppo.obterTexto_NomeProduto(), arg1);
 		ppo.clicarNoProdutoSelecionado();
 	}
+	
+	@Quando("^o sistema devera exibir um item incluido no carrinho$")
+	public void o_sistema_devera_exibir_um_item_incluido_no_carrinho() throws Throwable {
+		driver = Hooks.getDriver();
+		ProdutoPageObject ppo = new ProdutoPageObject(driver);
+		ppo.clicarNoProdutoSelecionado();
+		ppo.clicarNoBotaoAdicionarAoCarrinho();
+	}
 
 	@Quando("^visulizar seu valor e sua descricao \"([^\"]*)\" \"([^\"]*)\"$")
 	public void visulizar_seu_valor_e_sua_descricao(String arg1, String arg2) throws Throwable {
@@ -27,6 +35,7 @@ public class ProdutoSteps {
 		assertTrue(ppo.obterTexto_PrecoProduto().endsWith(arg1));
 		assertTrue(ppo.obterTexto_DescricaoProduto().endsWith(arg2));
 	}
+	
 
 	@Quando("^o usuario clicar em adicionar ao carrinho$")
 	public void o_usuario_clicar_em_adicionar_ao_carrinho() throws Throwable {
