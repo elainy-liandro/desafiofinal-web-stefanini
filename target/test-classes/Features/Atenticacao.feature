@@ -15,9 +15,9 @@ Funcionalidade: Autenticacao
     Entao o sistema devera autorizar a autenticacao exibindo pagina logada
 
     Exemplos: 
-      | username        | password     |
-      | standard_user   | secret_sauce |
-      
+      | username      | password     |
+      | standard_user | secret_sauce |
+
   @AutenticacaoUsuarioBloquado @SmokeTest
   Esquema do Cenario: Realizar autenticacao sem Sucesso
     Quando informar o campo Username como "<username>"

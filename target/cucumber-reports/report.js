@@ -94,7 +94,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 5203764401,
+  "duration": 3592220601,
   "status": "passed"
 });
 formatter.background({
@@ -113,7 +113,7 @@ formatter.match({
   "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_de_autenticacao()"
 });
 formatter.result({
-  "duration": 499981800,
+  "duration": 175483300,
   "status": "passed"
 });
 formatter.scenario({
@@ -178,7 +178,7 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Username_como(String)"
 });
 formatter.result({
-  "duration": 307622201,
+  "duration": 135261600,
   "status": "passed"
 });
 formatter.match({
@@ -191,25 +191,25 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Password_como(String)"
 });
 formatter.result({
-  "duration": 281060600,
+  "duration": 118150199,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.clicar_no_botao_Login()"
 });
 formatter.result({
-  "duration": 377331000,
+  "duration": 133045101,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.o_sistema_devera_autorizar_a_autenticacao_exibindo_pagina_logada()"
 });
 formatter.result({
-  "duration": 153509699,
+  "duration": 74622101,
   "status": "passed"
 });
 formatter.after({
-  "duration": 945664299,
+  "duration": 701170700,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -276,7 +276,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 3716045000,
+  "duration": 2587022500,
   "status": "passed"
 });
 formatter.background({
@@ -295,7 +295,7 @@ formatter.match({
   "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_de_autenticacao()"
 });
 formatter.result({
-  "duration": 184403200,
+  "duration": 65901300,
   "status": "passed"
 });
 formatter.scenario({
@@ -360,7 +360,7 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Username_como(String)"
 });
 formatter.result({
-  "duration": 227093300,
+  "duration": 122142100,
   "status": "passed"
 });
 formatter.match({
@@ -373,25 +373,162 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Password_como(String)"
 });
 formatter.result({
-  "duration": 219694101,
+  "duration": 105958000,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.clicar_no_botao_Login()"
 });
 formatter.result({
-  "duration": 206428200,
+  "duration": 95171201,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.o_sistema_devera_apresentar_mensagem_de_usuario_bloquado()"
 });
 formatter.result({
-  "duration": 168038900,
+  "duration": 60585299,
   "status": "passed"
 });
 formatter.after({
-  "duration": 839545700,
+  "duration": 747696101,
+  "status": "passed"
+});
+formatter.uri("Features/Produto.feature");
+formatter.feature({
+  "comments": [
+    {
+      "line": 1,
+      "value": "#language: pt"
+    },
+    {
+      "line": 2,
+      "value": "#Author: Elainy Rodrigues"
+    },
+    {
+      "line": 3,
+      "value": "#Data 02/05/2021"
+    }
+  ],
+  "line": 5,
+  "name": "Produto",
+  "description": "",
+  "id": "produto",
+  "keyword": "Funcionalidade",
+  "tags": [
+    {
+      "line": 4,
+      "name": "@Produto"
+    },
+    {
+      "line": 4,
+      "name": "@End2End"
+    }
+  ]
+});
+formatter.before({
+  "duration": 2629224099,
+  "status": "passed"
+});
+formatter.background({
+  "line": 7,
+  "name": "",
+  "description": "",
+  "type": "background",
+  "keyword": "Contexto"
+});
+formatter.step({
+  "line": 8,
+  "name": "que o usuario esteja na pagina pagina logada",
+  "keyword": "Dado "
+});
+formatter.step({
+  "line": 9,
+  "name": "o sistema devera autorizar a autenticacao exibindo pagina logada",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_pagina_logada()"
+});
+formatter.result({
+  "duration": 515023700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "AutenticacaoSteps.o_sistema_devera_autorizar_a_autenticacao_exibindo_pagina_logada()"
+});
+formatter.result({
+  "duration": 89070201,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "Adicionar produto ao carrinho",
+  "description": "",
+  "id": "produto;adicionar-produto-ao-carrinho",
+  "type": "scenario",
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@AdicionarProduto"
+    },
+    {
+      "line": 11,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "o usuario selecionar um produto",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "visulizar sua descricao",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 15,
+  "name": "o usuario clicar em adicionar ao carrinho",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 16,
+  "name": "o sistema devera exibir um item no carrinho",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "ProdutoSteps.o_usuario_selecionar_um_produto()"
+});
+formatter.result({
+  "duration": 144455000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ProdutoSteps.visulizar_sua_descricao()"
+});
+formatter.result({
+  "duration": 75356500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ProdutoSteps.o_usuario_clicar_em_adicionar_ao_carrinho()"
+});
+formatter.result({
+  "duration": 90697900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "ProdutoSteps.o_sistema_devera_exibir_um_item_no_carrinho()"
+});
+formatter.result({
+  "duration": 63904600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 698034500,
   "status": "passed"
 });
 });

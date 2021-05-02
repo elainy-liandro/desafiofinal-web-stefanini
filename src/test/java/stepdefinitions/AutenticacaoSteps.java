@@ -17,6 +17,17 @@ public class AutenticacaoSteps {
 		AutenticacaoPageObject apo = new AutenticacaoPageObject(driver);
 	    apo.verificarSeUsuarioEstaNaPaginaDeLogin();
 	}
+	
+	@Dado("^que o usuario esteja na pagina pagina logada$")
+	public void que_o_usuario_esteja_na_pagina_pagina_logada() throws Throwable {
+		Hooks.abrirUrl("http://saucedemo.com");
+		driver = Hooks.getDriver();
+		AutenticacaoPageObject apo = new AutenticacaoPageObject(driver);
+	    apo.verificarSeUsuarioEstaNaPaginaDeLogin();
+	    apo.preencherCampoUsername("standard_user");
+	    apo.preencherCampoPassword("secret_sauce");
+	    apo.clicarNoBotaoLogin();
+	}
 
 	@Quando("^informar o campo Username como \"([^\"]*)\"$")
 	public void informar_o_campo_Username_como(String arg1) throws Throwable {
