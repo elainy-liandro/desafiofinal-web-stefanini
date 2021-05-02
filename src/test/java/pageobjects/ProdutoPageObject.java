@@ -19,6 +19,9 @@ public class ProdutoPageObject extends MetodosUteis {
 
 	@FindBy(how = How.ID, using = "item_4_title_link")
 	private WebElement nomeProduto;
+	
+	@FindBy(how = How.XPATH, using = "//div[contains(@class, 'inventory_details_price')]")
+	private WebElement precoProduto;
 
 	@FindBy(how = How.XPATH, using = "//div[contains(@class, 'inventory_details_desc large_size')]")
 	private WebElement descricaoProduto;
@@ -42,6 +45,11 @@ public class ProdutoPageObject extends MetodosUteis {
 	public void clicarNoProdutoSelecionado() {
 		esperarElemento(nomeProduto);
 		nomeProduto.click();
+	}
+	
+	public String obterTexto_PrecoProduto() {
+		esperarElemento(precoProduto);
+		return precoProduto.getText();
 	}
 
 	public String obterTexto_DescricaoProduto() {

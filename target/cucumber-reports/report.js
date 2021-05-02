@@ -94,7 +94,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 3592220601,
+  "duration": 3669809200,
   "status": "passed"
 });
 formatter.background({
@@ -113,7 +113,7 @@ formatter.match({
   "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_de_autenticacao()"
 });
 formatter.result({
-  "duration": 175483300,
+  "duration": 189347701,
   "status": "passed"
 });
 formatter.scenario({
@@ -178,7 +178,7 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Username_como(String)"
 });
 formatter.result({
-  "duration": 135261600,
+  "duration": 141124800,
   "status": "passed"
 });
 formatter.match({
@@ -191,25 +191,25 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Password_como(String)"
 });
 formatter.result({
-  "duration": 118150199,
+  "duration": 128315099,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.clicar_no_botao_Login()"
 });
 formatter.result({
-  "duration": 133045101,
+  "duration": 132702300,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.o_sistema_devera_autorizar_a_autenticacao_exibindo_pagina_logada()"
 });
 formatter.result({
-  "duration": 74622101,
+  "duration": 72238100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 701170700,
+  "duration": 693304900,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -276,7 +276,7 @@ formatter.examples({
   "keyword": "Exemplos"
 });
 formatter.before({
-  "duration": 2587022500,
+  "duration": 2599087599,
   "status": "passed"
 });
 formatter.background({
@@ -295,7 +295,7 @@ formatter.match({
   "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_de_autenticacao()"
 });
 formatter.result({
-  "duration": 65901300,
+  "duration": 62876300,
   "status": "passed"
 });
 formatter.scenario({
@@ -360,7 +360,7 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Username_como(String)"
 });
 formatter.result({
-  "duration": 122142100,
+  "duration": 127371901,
   "status": "passed"
 });
 formatter.match({
@@ -373,25 +373,25 @@ formatter.match({
   "location": "AutenticacaoSteps.informar_o_campo_Password_como(String)"
 });
 formatter.result({
-  "duration": 105958000,
+  "duration": 125949300,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.clicar_no_botao_Login()"
 });
 formatter.result({
-  "duration": 95171201,
+  "duration": 101871701,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.o_sistema_devera_apresentar_mensagem_de_usuario_bloquado()"
 });
 formatter.result({
-  "duration": 60585299,
+  "duration": 58372899,
   "status": "passed"
 });
 formatter.after({
-  "duration": 747696101,
+  "duration": 700382501,
   "status": "passed"
 });
 formatter.uri("Features/Produto.feature");
@@ -426,8 +426,73 @@ formatter.feature({
     }
   ]
 });
+formatter.scenarioOutline({
+  "line": 12,
+  "name": "Adicionar produto ao carrinho",
+  "description": "",
+  "id": "produto;adicionar-produto-ao-carrinho",
+  "type": "scenario_outline",
+  "keyword": "Esquema do Cenario",
+  "tags": [
+    {
+      "line": 11,
+      "name": "@AdicionarProduto"
+    },
+    {
+      "line": 11,
+      "name": "@SmokeTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 13,
+  "name": "o usuario selecionar um produto \"\u003cnomeProduto\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 14,
+  "name": "visulizar seu valor e sua descricao \"\u003cvalorProduto\u003e\" \"\u003cdescricaoProduto\u003e\"",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 15,
+  "name": "o usuario clicar em adicionar ao carrinho",
+  "keyword": "E "
+});
+formatter.step({
+  "line": 16,
+  "name": "o sistema devera exibir um item no carrinho",
+  "keyword": "Entao "
+});
+formatter.examples({
+  "line": 18,
+  "name": "",
+  "description": "",
+  "id": "produto;adicionar-produto-ao-carrinho;",
+  "rows": [
+    {
+      "cells": [
+        "nomeProduto",
+        "valorProduto",
+        "descricaoProduto"
+      ],
+      "line": 19,
+      "id": "produto;adicionar-produto-ao-carrinho;;1"
+    },
+    {
+      "cells": [
+        "Sauce Labs Backpack",
+        "$29.99",
+        "streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."
+      ],
+      "line": 20,
+      "id": "produto;adicionar-produto-ao-carrinho;;2"
+    }
+  ],
+  "keyword": "Exemplos"
+});
 formatter.before({
-  "duration": 2629224099,
+  "duration": 2561432300,
   "status": "passed"
 });
 formatter.background({
@@ -451,27 +516,35 @@ formatter.match({
   "location": "AutenticacaoSteps.que_o_usuario_esteja_na_pagina_pagina_logada()"
 });
 formatter.result({
-  "duration": 515023700,
+  "duration": 531421300,
   "status": "passed"
 });
 formatter.match({
   "location": "AutenticacaoSteps.o_sistema_devera_autorizar_a_autenticacao_exibindo_pagina_logada()"
 });
 formatter.result({
-  "duration": 89070201,
+  "duration": 59892900,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 12,
+  "line": 20,
   "name": "Adicionar produto ao carrinho",
   "description": "",
-  "id": "produto;adicionar-produto-ao-carrinho",
+  "id": "produto;adicionar-produto-ao-carrinho;;2",
   "type": "scenario",
-  "keyword": "Cenario",
+  "keyword": "Esquema do Cenario",
   "tags": [
+    {
+      "line": 4,
+      "name": "@End2End"
+    },
     {
       "line": 11,
       "name": "@AdicionarProduto"
+    },
+    {
+      "line": 4,
+      "name": "@Produto"
     },
     {
       "line": 11,
@@ -481,12 +554,19 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "o usuario selecionar um produto",
+  "name": "o usuario selecionar um produto \"Sauce Labs Backpack\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "E "
 });
 formatter.step({
   "line": 14,
-  "name": "visulizar sua descricao",
+  "name": "visulizar seu valor e sua descricao \"$29.99\" \"streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.\"",
+  "matchedColumns": [
+    1,
+    2
+  ],
   "keyword": "E "
 });
 formatter.step({
@@ -500,35 +580,51 @@ formatter.step({
   "keyword": "Entao "
 });
 formatter.match({
-  "location": "ProdutoSteps.o_usuario_selecionar_um_produto()"
+  "arguments": [
+    {
+      "val": "Sauce Labs Backpack",
+      "offset": 33
+    }
+  ],
+  "location": "ProdutoSteps.o_usuario_selecionar_um_produto(String)"
 });
 formatter.result({
-  "duration": 144455000,
+  "duration": 147739299,
   "status": "passed"
 });
 formatter.match({
-  "location": "ProdutoSteps.visulizar_sua_descricao()"
+  "arguments": [
+    {
+      "val": "$29.99",
+      "offset": 37
+    },
+    {
+      "val": "streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.",
+      "offset": 46
+    }
+  ],
+  "location": "ProdutoSteps.visulizar_seu_valor_e_sua_descricao(String,String)"
 });
 formatter.result({
-  "duration": 75356500,
+  "duration": 137746300,
   "status": "passed"
 });
 formatter.match({
   "location": "ProdutoSteps.o_usuario_clicar_em_adicionar_ao_carrinho()"
 });
 formatter.result({
-  "duration": 90697900,
+  "duration": 88943901,
   "status": "passed"
 });
 formatter.match({
   "location": "ProdutoSteps.o_sistema_devera_exibir_um_item_no_carrinho()"
 });
 formatter.result({
-  "duration": 63904600,
+  "duration": 54336599,
   "status": "passed"
 });
 formatter.after({
-  "duration": 698034500,
+  "duration": 716022000,
   "status": "passed"
 });
 });

@@ -13,19 +13,19 @@ public class ProdutoSteps {
 
 	WebDriver driver;
 
-	@Quando("^o usuario selecionar um produto$")
-	public void o_usuario_selecionar_um_produto() throws Throwable {
+	@Quando("^o usuario selecionar um produto \"([^\"]*)\"$")
+	public void o_usuario_selecionar_um_produto(String arg1) throws Throwable {
 		driver = Hooks.getDriver();
 		ProdutoPageObject ppo = new ProdutoPageObject(driver);
-		assertEquals(ppo.obterTexto_NomeProduto(), "Sauce Labs Backpack");
+		assertEquals(ppo.obterTexto_NomeProduto(), arg1);
 		ppo.clicarNoProdutoSelecionado();
 	}
 
-	@Quando("^visulizar sua descricao$")
-	public void visulizar_sua_descricao() throws Throwable {
+	@Quando("^visulizar seu valor e sua descricao \"([^\"]*)\" \"([^\"]*)\"$")
+	public void visulizar_seu_valor_e_sua_descricao(String arg1, String arg2) throws Throwable {
 		ProdutoPageObject ppo = new ProdutoPageObject(driver);
-		assertTrue(ppo.obterTexto_DescricaoProduto().
-				endsWith("with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection."));
+		assertTrue(ppo.obterTexto_PrecoProduto().endsWith(arg1));
+		assertTrue(ppo.obterTexto_DescricaoProduto().endsWith(arg2));
 	}
 
 	@Quando("^o usuario clicar em adicionar ao carrinho$")
