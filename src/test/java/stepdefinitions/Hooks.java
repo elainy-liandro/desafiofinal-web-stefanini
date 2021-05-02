@@ -20,7 +20,7 @@ public class Hooks {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("http://opensource-demo.orangehrmlive.com/");
+		driver.get("http://saucedemo.com");
 	}
 
 	@After
